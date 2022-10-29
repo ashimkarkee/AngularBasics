@@ -111,3 +111,32 @@ class ClassName{
 //1 argument functions
 //fucntions with return typesc
 //functions without return types
+
+class ClassName{
+  productName: string= 'Xbox';
+  productID: number = 100;
+  productOnj: any = {
+    pId: 11,
+    pName: 'playstation'
+  }
+
+  functionName() {  //0 parameter function
+    
+  }
+
+  getAllItems(){
+    //get mens related tops
+  }
+  
+  getAlltopsForMen(){
+    //to render all the tops for only men
+  }
+
+  getStudentByID(studentID: number){
+
+  }
+
+  getStudentByIdAndName(){
+
+  }
+}
