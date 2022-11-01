@@ -140,3 +140,9 @@ class ClassName{
 
   }
 }
+When we click the button fromm(app.component.html), associated function runs from (app.component.ts), then console.log("Navigate To Men"); will print out 
+"Navigate To Men" then it will move to step this.router.navigate(['mens']); where mens will be added to the URL for eg Localhost:4200/mens then it goes to
+app-routing.module.ts when path:'mens' will be proceded and components: MensComponents will be rendered then it will use selector 'app-mens' then
+<router-outlet> will display what's inside of it.
+
+
