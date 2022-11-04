@@ -140,9 +140,68 @@ class ClassName{
 
   }
 }
+
+
+
 When we click the button fromm(app.component.html), associated function runs from (app.component.ts), then console.log("Navigate To Men"); will print out 
 "Navigate To Men" then it will move to step this.router.navigate(['mens']); where mens will be added to the URL for eg Localhost:4200/mens then it goes to
 app-routing.module.ts when path:'mens' will be proceded and components: MensComponents will be rendered then it will use selector 'app-mens' then
 <router-outlet> will display what's inside of it.
 
+carModels = { 
+  brand:'toyota',
+  engine:['fast', 'slow','indeedFast', 'okayslow'],
+  ignition : {
+    ignition1 : 50,
+    ignition2: 30,
+    ignition3: 90,
+    ignition4: 35
+    }
+}
+
+tvBrands: any[]= [
+{tvBrands: 'ashim'},
+]
+
+data: any= [
+  {
+    name:'Danny',
+    age: 25,
+    address:'abcd@gmail.com'
+  },
+  {
+    name: 'Jimmy',
+    age: 32,
+    address: 'xyz@gmail.com'
+  },
+  {
+    name: 'James',
+    age: 52,
+    address: 'mnop@gmail.com'
+  },
+  {
+    name: 'Kaleb',
+    age: 38,
+    address: 'qwetry@gmail.com'
+  }
+]
+
+<h1>For Loop in Angular using @ngFor</h1>
+
+<table border="1">
+    <tr>
+        <td>Name</td>
+        <td>Age</td>
+        <td>Email Address</td>
+    </tr>
+    <tr *ngFor= "let item of data">
+        <td>{{item.name}}</td>
+        <td>{{item.age}}</td>
+        <td> {{item.address}} </td>
+
+    </tr>
+</table>
+
+<td> is HTML table
+<tr> HTML element defines a row of cells in a table
 
